@@ -5,23 +5,27 @@ function LineChart() {
       <ResponsiveLine
         data={[
           {
-            id: "Series 1",
+            id: "Sales Data",
             data: [
-              { x: 1, y: 50 },
-              { x: 2, y: 80 },
-              { x: 3, y: 40 },
-              { x: 4, y: 90 },
-              { x: 5, y: 60 },
+              { x: 1, y: 20 },
+              { x: 2, y: 40 },
+              { x: 3, y: 35 },
+              { x: 4, y: 50 },
+              { x: 5, y: 45 },
+              { x: 6, y: 60 },
+              { x: 7, y: 75 },
             ],
           },
           {
-            id: "Series 2",
+            id: "Revenue Data",
             data: [
-              { x: 1, y: 30 },
-              { x: 2, y: 60 },
-              { x: 3, y: 20 },
-              { x: 4, y: 70 },
+              { x: 1, y: 10 },
+              { x: 2, y: 30 },
+              { x: 3, y: 25 },
+              { x: 4, y: 55 },
               { x: 5, y: 50 },
+              { x: 6, y: 70 },
+              { x: 7, y: 80 },
             ],
           },
         ]}
@@ -36,13 +40,13 @@ function LineChart() {
         axisTop={null}
         axisRight={null}
         axisBottom={{
-          tickValues: [1, 2, 3, 4, 5],
-          legend: "X Axis",
+          tickValues: [1, 2, 3, 4, 5, 6, 7],
+          legend: "Time (Months)",
           legendPosition: "middle",
           legendOffset: 32,
         }}
         axisLeft={{
-          legend: "Y Axis",
+          legend: "Value",
           legendPosition: "middle",
           legendOffset: -40,
         }}
@@ -51,7 +55,7 @@ function LineChart() {
         pointBorderWidth={2}
         pointBorderColor={{ from: "color", modifiers: [["darker", 0.6]] }}
         useMesh={true}
-        colors={{ scheme: "set1" }}
+        colors={{ scheme: "set2" }}
       />
     </div>
   );
