@@ -8,7 +8,7 @@ const NewYearPage = () => {
       {/* Header */}
       <header className="bg-red-600 p-6 text-white text-center shadow-lg">
         <h1 className="text-4xl font-bold">春节快乐!</h1>
-        <p className="mt-2 text-lg">祝你和家人新的一年健康、幸福、如意！</p>
+        <p className="mt-2 text-lg">祝您和家人新的一个年健康、幸福、如意！</p>
       </header>
 
       {/* Main Content */}
@@ -16,7 +16,7 @@ const NewYearPage = () => {
         <section>
           <h2 className="text-3xl font-semibold mb-4">春节的意义</h2>
           <p className="text-lg">
-            春节是中国最重要的传统节日，象征着新的一年的开始。家人团聚，辞旧迎新，寄托着人们对美好生活的期望和祝福。
+            春节是中国最重要的传统节日，象征着辞旧迎新的一年开始。家人团聚，祈求新的一年平安、顺利、幸福。
           </p>
         </section>
 
@@ -25,24 +25,24 @@ const NewYearPage = () => {
         <section>
           <h2 className="text-3xl font-semibold mb-4">春节活动</h2>
           <ul className="space-y-4 text-lg">
-            <li>1. 团圆饭：家人齐聚一堂，共享美好时光。</li>
-            <li>2. 放鞭炮：象征着驱赶邪祟，迎接新的一年。</li>
-            <li>3. 红包：长辈给晚辈发红包，祝愿他们在新的一年里健康、快乐。</li>
+            <li>1. 年夜饭：家人团聚一起，分享美味时光。</li>
+            <li>2. 放烟花：象征着辞旧迎新，迎接新的希望。</li>
+            <li>3. 红包：长辈给晚辈派发红包，祝愿好运连连。</li>
           </ul>
         </section>
 
         <Separator className="my-6" />
 
         <section>
-          <h2 className="text-3xl font-semibold mb-4">节日照片</h2>
+          <h2 className="text-3xl font-semibold mb-4">春节瞬间</h2>
           <div className="grid grid-cols-3 gap-6">
             <div>
               <img
                 src="https://images.unsplash.com/photo-1547547039-8f8bcfe0e3a5?w=500&fit=crop"
-                alt="春节灯笼"
+                alt="春节烟花"
                 className="rounded-md shadow-md"
               />
-              <p className="text-center mt-2">春节灯笼</p>
+              <p className="text-center mt-2">春节烟花</p>
             </div>
             <div>
               <img
@@ -55,10 +55,10 @@ const NewYearPage = () => {
             <div>
               <img
                 src="https://images.unsplash.com/photo-1584703471520-0c98b6c9b100?w=500&fit=crop"
-                alt="家庭聚餐"
+                alt="家庭团聚"
                 className="rounded-md shadow-md"
               />
-              <p className="text-center mt-2">家庭聚餐</p>
+              <p className="text-center mt-2">家庭团聚</p>
             </div>
           </div>
         </section>
@@ -66,7 +66,7 @@ const NewYearPage = () => {
         <Separator className="my-6" />
 
         <section>
-          <h2 className="text-3xl font-semibold mb-4">节日祝福</h2>
+          <h2 className="text-3xl font-semibold mb-4">春节祝福</h2>
           <TooltipProvider>
             <div className="flex items-center space-x-4">
               <Tooltip>
@@ -77,7 +77,7 @@ const NewYearPage = () => {
                   </Avatar>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>愿你在新的一年里身体健康，工作顺利！</p>
+                  <p>祝您在新的一年里身体健康，工作顺利！</p>
                 </TooltipContent>
               </Tooltip>
               <div>
@@ -90,7 +90,7 @@ const NewYearPage = () => {
 
       {/* Footer */}
       <footer className="bg-red-600 p-4 text-white text-center">
-        <p>© 2025 春节网页 - 祝你好运常伴！</p>
+        <p>© 2025 春节网页 - 祝您好运常伴！</p>
       </footer>
     </div>
   );
