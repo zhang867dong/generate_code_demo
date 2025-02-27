@@ -15,10 +15,12 @@ import commitPlugin from "npm:octokit-commit-multiple-files";
 import { checkValid, checkWhitelist } from "./quota.ts";
 
 const apiKey = Deno.env.get("OPENAI_API_KEY");
+const baseURL = Deno.env.get("OPENAI_BASE_URL");
 assert(apiKey, "failed to get openAI API key");
 
 const openai = new OpenAI({
   apiKey: apiKey,
+  baseURL: baseURL
 });
 
 export async function getCode(
