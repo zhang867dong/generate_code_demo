@@ -24,6 +24,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
           WHITELIST: ${{ secrets.WHITELIST }}
           CONFIG: ${{ vars.CONFIG }}
           ACTOR: ${{ github.actor }}
